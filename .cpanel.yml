@@ -1,0 +1,33 @@
+# cPanel Deployment Configuration for Astro Static Site
+
+deploy:
+  # Build the project before deployment
+  steps:
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build the project
+      run: npm run build
+
+  # Deployment settings
+  deployment:
+    # Deploy the dist folder to public_html
+    destination: public_html
+    source: dist
+
+    # Exclude unnecessary files from deployment
+    exclude:
+      - node_modules
+      - src
+      - .git
+      - .astro
+      - package.json
+      - package-lock.json
+      - tsconfig.json
+      - astro.config.mjs
+      - README.md
+      - .gitignore
+
+  # Environment settings
+  environment:
+    node_version: "20"
