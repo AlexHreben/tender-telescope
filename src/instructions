@@ -1,0 +1,42 @@
+# Done! I've added Yandex Analytics (Yandex Metrica) to your site.
+
+#   To complete the setup:
+
+#    1. Go to Yandex Metrica (https://metrica.yandex.com/) and create a new counter
+#    2. Copy your Counter ID (a number like 12345678)
+#    3. Open /Users/alekseygreben/olegator/tender-telescope/src/pages/index.astro
+#    4. Replace YOUR_YANDEX_COUNTER_ID with your actual counter ID in both places:
+#       - In the ym() function call
+#       - In the noscript image tag
+
+# ✦ The tracking code will now collect visitor data including page views, clicks, and user
+#   behavior on your agriculture bags website.
+
+# //---------------//
+
+# ✦ Done! I've added Telegram integration to your contact form. Here's what you need to do to
+#   make it work:
+
+#   To get your Telegram credentials:
+
+#    1. Create a Telegram Bot:
+#       - Open Telegram and search for @BotFather
+#       - Send /newbot and follow the instructions
+#       - Copy the BOT_TOKEN (looks like: 123456789:ABCdefGHIjklMNOpqrsTUVwxyz)
+
+#    2. Get your Chat ID:
+#       - Open Telegram and search for @userinfobot
+#       - Send any message to get your CHAT_ID (looks like: 123456789)
+#       - For a channel, add @channelusername to your contacts, then use @userinfobot to get the
+#         channel ID
+
+#   To configure:
+
+#   Open /Users/alekseygreben/olegator/tender-telescope/src/pages/index.astro and replace these
+#   lines with your actual values:
+
+#    const BOT_TOKEN = 'YOUR_BOT_TOKEN_HERE';
+#    const CHAT_ID = 'YOUR_CHAT_ID_HERE';
+
+# ✦ The form will now send formatted messages to your Telegram channel with name, email, and
+#   message content when submitted.
